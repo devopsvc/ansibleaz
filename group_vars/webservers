@@ -1,3 +1,4 @@
 ---
 webserpackonubuntu: apache2
 webserpackonredhat: httpd
+gitpack: git

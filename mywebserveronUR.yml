@@ -23,3 +23,9 @@
       name: "{{webserpackonredhat}}"
       state: started
     when: ansible_os_family =="RedHat"
+    
+  - name: remove git
+    apt:
+      name: "{{gitpack}}"
+      state: absent
+    when: ansible_os_family =="Debian"
