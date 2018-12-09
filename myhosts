@@ -6,11 +6,6 @@
 172.31.23.200
 172.31.26.128
 
-[webservers:vars]
-webserpackonubuntu=apache2
-webserpackonredhat=httpd
-
-
 [applicationservers]
 172.31.26.23
 172.31.26.56
