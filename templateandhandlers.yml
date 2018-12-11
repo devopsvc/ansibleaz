@@ -1,0 +1,16 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - include_tasks: myfile.yml
+  - name: intall webserver on redhat
+    yum:
+      name: httpd
+      state: present
+  - name: start webserver
+    service:
+      name: httpd
+      state: started
+  
+
+  
